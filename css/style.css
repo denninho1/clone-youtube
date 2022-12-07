@@ -46,7 +46,7 @@ img {
 
 .header {
     position: fixed;
-    padding: 15px 25px;
+    padding: 10px 25px;
     top: 0;
     left: 0;
     right: 0;
@@ -55,6 +55,8 @@ img {
 .header .header_top {
     justify-content: space-between;
 }
+
+/* Styles left header */
 
 .header .left .menu_container .menu {
     width: 1.8rem;
@@ -108,4 +110,68 @@ img {
     right: -17px;
     color: #9b9b9b;
     font-size: 1rem;
+}
+
+/* Styles center header */
+
+.header .center .input_container {
+    flex-direction: row;
+    height: 40px;
+    background-color: transparent;
+    border: .1rem solid var(--gray);
+    border-radius: 30px;
+    width: 50rem;
+    overflow: hidden;
+    margin-right: 2rem;
+}
+
+.header .center .input_container .form_search {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+}
+
+.header .center .input_container .form_search #label_search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header .center .input_container .form_search #label_search i {
+    color: #9b9b9b;
+    transition: 100ms linear;
+}
+
+.header .center .input_container .form_search #label_search:hover i {
+    color: var(--primary-white);
+}
+
+.header .center .input_container .form_search #search_input {
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.6rem;
+}
+
+.header .center .input_container .button_search {
+    background-color: #292929;
+    font-size: 1.8rem;
+    width: 7rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header .center .button_voice {
+    cursor: pointer;
+    background-color: #181818;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
+
+.header .center .button_voice:hover {
+    background-color: #2b2b2b;
 }

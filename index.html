@@ -29,11 +29,26 @@
           </a>
         </div>
   
-        <div class="center">
-          <div class="input_container">
-            <input type="search" name="" id="">
+        <div class="center d-flex">
+          <div class="input_container d-flex">
+            <form class="form_search">
+              <label for="search_input" id="label_search">
+                <i class="fa-solid fa-keyboard"></i>
+              </label>
+              <input type="search" id="search_input" placeholder="Pesquisar">
+            </form>
+
+            <button class="button_search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </div>
+
+          <button class="button_voice">
+            <i class="fa-solid fa-microphone"></i>
+          </button>
         </div>
+
+        <div class="right"></div>
       </div>
     </header>
   </body>
